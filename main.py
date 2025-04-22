@@ -27,8 +27,13 @@ def main():
     if game.winner():
         print(f'\nCongratulations, {player.name}!')
         player.increment_score()
+        won = True
     else:
         print(f'\nBetter luck next time, {player.name} The word was: {game.word}')
+        won = False
+
+    save_result_file(player, game.word, won)
+    save_result_db(player, game.word, won)
 
 if __name__ == '__main__':
     main()
