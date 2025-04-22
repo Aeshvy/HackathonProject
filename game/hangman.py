@@ -2,7 +2,7 @@ import random
 
 LIVES = 6
 
-class hangmanGame:
+class HangmanGame:
     def __init__(self, word):
         self.word = word.upper()
         self.guessed_letters = set()
@@ -20,4 +20,11 @@ class hangmanGame:
             self.attempts_left -= 1
             return "Wrong!"
     
-    def
+    def display_word(self):
+        return " ".join([letter if letter in self.guessed_letters else "_" for letter in self.word])
+    
+    def winner(self):
+        return all(letter in self.guessed_letters for letter in self.word)
+    
+    def loser(self):
+        return self.attempts_left <= 0

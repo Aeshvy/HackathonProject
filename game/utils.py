@@ -36,3 +36,8 @@ def save_result_db(player, word, won):
             score INTEGER
         )
     ''')
+    c.execute('''
+        INSERT INTO scores (player, word, won, score) VALUES (?, ?, ?, ?)
+    ''', (player.name, word, won, player.score))
+    conn.commit()
+    conn.close()
