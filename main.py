@@ -2,6 +2,7 @@ import json
 import os
 from game.hangman import HangmanGame
 from game.player import Player
+from game.utils import save_result_file, save_result_db
 
 WORDLIST_PATH = 'data/words.json'
 
