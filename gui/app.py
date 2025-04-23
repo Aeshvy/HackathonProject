@@ -41,3 +41,35 @@ class HangmanApp:
         self.status_label.pack(pady=5)
 
         tk.Button(self.root, text="Hint", command=self.show_hint).pack(pady=5)
+
+    def update_display(self):
+        self.word_var.set(self.game.display_word())
+        self.status_var.set(f"Attempts Left: {self.game.attempts_left}")
+
+    def make_guess(self, event):
+        guess = self.entry.get().strip()
+        self.entry.delete(0, tk.END)
+
+        if guess:
+            result = self.game.guess(guess)
+            self.status_var.set(result)
+            self.update_display()
+
+            if self.game.is_won():
+                messagebox.showinfo("Hangman", f"You won! The word was: {self.game.word}")
+                self.root.quit()
+            elif self.game.is_lost():
+                messagebox.showinfo("Hangman", f"You lost. The word was: {self.game.word}")
+                self.root.quit()
+
+    def show_hint(self):
+        definition = get_definition(self.word)
+        synonyms = get_synonyms(self.word)
+        antonyms = get_antonyms(self.word)
+        hint = f"{definition}\n{synonyms}\n{antonyms}"
+        messagebox.showinfo("Hint", hint)
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = HangmanApp(root)
+    root.mainloop()

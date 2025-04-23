@@ -8,7 +8,7 @@ DB_PATH = 'data/scores.db'
 def save_result_file(player, word, won):
     result = {
         'player': player.name,
-        'score': player.scoore,
+        'score': player.score,
         'word': word,
         'won': won
     }
