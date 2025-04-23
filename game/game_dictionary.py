@@ -9,7 +9,7 @@ def get_definition(word):
         meanings = data[0].get("meanings", [])
         if meanings:
             definition = meanings[0]["definitions"][0]["definition"]
-            return f"Definition: {definition}"
+            return f"{definition}"
         else:
             return "No definition found."
     except requests.exceptions.RequestException:
