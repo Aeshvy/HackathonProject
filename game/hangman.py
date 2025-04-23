@@ -1,7 +1,4 @@
-import random
-
 LIVES = 6
-
 class HangmanGame:
     def __init__(self, word):
         self.word = word.upper()
