@@ -8,7 +8,7 @@ def get_synonyms(word):
         data = response.json()
         if data:
             synonyms = [item['word'] for item in data[:5]]
-            return f"Synonyms: {', '.join(synonyms)}"
+            return f"{', '.join(synonyms)}"
         else:
             return "No synonyms found."
     except requests.exceptions.RequestException:
@@ -22,7 +22,7 @@ def get_antonyms(word):
         data = response.json()
         if data:
             antonyms = [item['word'] for item in data[:5]]
-            return f"Antonyms: {', '.join(antonyms)}"
+            return f"{', '.join(antonyms)}"
         else:
             return "No antonyms found."
     except requests.exceptions.RequestException:
