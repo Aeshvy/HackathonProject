@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "player": "Gail",
+    "score": 0,
+    "word": "HE",
+    "won": false
+  },
+  {
+    "player": "Kelly",
+    "score": 0,
+    "word": "RHYTHM",
+    "won": false
+  },
+  {
+    "player": "Stephanie",
+    "score": 0,
+    "word": "TALK",
+    "won": false
+  },
+  {
+    "player": "Thomas",
+    "score": 0,
+    "word": "DESIRE",
+    "won": false
+  },
+  {
+    "player": "Nancy",
+    "score": 0,
+    "word": "LINEN",
+    "won": false
+  },
+  {
+    "player": "Kevin",
+    "score": 0,
+    "word": "FISH",
+    "won": false
+  },
+  {
+    "player": "Regina",
+    "score": 1,
+    "word": "SPACE",
+    "won": true
+  }
+]
