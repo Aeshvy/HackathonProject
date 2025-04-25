@@ -134,12 +134,12 @@ class HangmanApp:
             messagebox.showinfo("Hangman", f"🎉 Congratulations, you won!")
             self.player.increment_score()
             save_result_file(self.player, self.game.word, True, self.selected_category)
-            save_result_db(self.player, self.game.word, True)
+            save_result_db(self.player, self.game.word, True, self.selected_category)
             build_main_menu(self)
         elif self.game.loser():
             messagebox.showinfo("Hangman", f"💀 You lost. The word was: {self.game.word}")
             save_result_file(self.player, self.game.word, False, self.selected_category)
-            save_result_db(self.player, self.game.word, False)
+            save_result_db(self.player, self.game.word, False, self.selected_category)
             build_main_menu(self)
             
     def show_hint(self):
