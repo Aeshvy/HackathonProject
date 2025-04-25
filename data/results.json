@@ -1,44 +1,34 @@
 [
   {
-    "player": "Gail",
-    "score": 0,
-    "word": "HE",
-    "won": false
-  },
-  {
-    "player": "Kelly",
-    "score": 0,
-    "word": "RHYTHM",
-    "won": false
-  },
-  {
-    "player": "Stephanie",
-    "score": 0,
-    "word": "TALK",
-    "won": false
-  },
-  {
-    "player": "Thomas",
-    "score": 0,
-    "word": "DESIRE",
-    "won": false
-  },
-  {
-    "player": "Nancy",
-    "score": 0,
-    "word": "LINEN",
-    "won": false
-  },
-  {
-    "player": "Kevin",
-    "score": 0,
-    "word": "FISH",
-    "won": false
-  },
-  {
-    "player": "Regina",
+    "player": "The Teal Skill",
     "score": 1,
-    "word": "SPACE",
-    "won": true
+    "word": "STUNTMAN",
+    "won": true,
+    "category": "Movies",
+    "word_length": 8
+  },
+  {
+    "player": "The DarkMagenta Amount",
+    "score": 0,
+    "word": "AIRPORT",
+    "won": false,
+    "category": "World",
+    "word_length": 7
+  },
+  {
+    "player": "The DarkMagenta Amount",
+    "score": 0,
+    "word": "PRETZEL",
+    "won": false,
+    "category": "Food",
+    "word_length": 7
+  },
+  {
+    "player": "The DarkMagenta Amount",
+    "score": 1,
+    "word": "STUNTMAN",
+    "won": true,
+    "category": "Movies",
+    "word_length": 8
   }
 ]
