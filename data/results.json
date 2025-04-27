@@ -30,5 +30,21 @@
     "won": true,
     "category": "Movies",
     "word_length": 8
+  },
+  {
+    "player": "The LightCoral Guy",
+    "score": 1,
+    "word": "FRANCHISE",
+    "won": true,
+    "category": "Movies",
+    "word_length": 9
+  },
+  {
+    "player": "The LightCoral Guy",
+    "score": 1,
+    "word": "PASSPORT",
+    "won": false,
+    "category": "World",
+    "word_length": 8
   }
 ]
