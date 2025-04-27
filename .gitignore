@@ -1,3 +1,5 @@
 /my_env
 .env
-.vs/
+.vs
+__pycache__
+/
